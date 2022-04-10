@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>UTDR_Music_Randomizer</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>misc\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="UTDR-Music-Randomizer\**" />
+    <EmbeddedResource Remove="UTDR-Music-Randomizer\**" />
+    <None Remove="UTDR-Music-Randomizer\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="misc\Icon.ico" />
+  </ItemGroup>
+
+</Project>
